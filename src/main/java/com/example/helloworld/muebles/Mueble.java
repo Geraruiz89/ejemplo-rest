@@ -19,12 +19,12 @@ public class Mueble {
 /*
 
 CREATE TABLE Mueble (
-    id INT,
+    id INT NOT NULL,
     nombre VARCHAR(64),
     color VARCHAR(64),
     precio decimal,
     agotado boolean,
     PRIMARY KEY(id)
-);
+)ENGINE=INNODB;
 
 */

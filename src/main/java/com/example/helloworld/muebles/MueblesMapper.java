@@ -20,7 +20,7 @@ public interface MueblesMapper {
     @Insert("INSERT INTO Mueble VALUES(#{id},#{nombre},#{color},#{precio},#{agotado})")
     public void insert(Mueble m);
     
-    @Update("UPDATE Mueble SET id=#{id}, nombre=#{nombre}, color=#{color}, precio=#{precio}, agotado=#{agotado} WHERE id=#{id}")
+    @Update("UPDATE Mueble SET nombre=#{nombre}, color=#{color}, precio=#{precio}, agotado=#{agotado} WHERE id=#{id}")
     public void update(Mueble m);
     
     @Delete("DELETE FROM Mueble WHERE id=#{idmueble}")

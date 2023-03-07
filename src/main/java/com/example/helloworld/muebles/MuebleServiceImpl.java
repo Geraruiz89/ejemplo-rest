@@ -2,9 +2,11 @@ package com.example.helloworld.muebles;
 
 import java.util.List;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-@Service(value = "primera")
+@Service
+@Primary
 
 public class MuebleServiceImpl implements MueblesService{
 	private MueblesMapper muemap;
@@ -32,7 +34,7 @@ public class MuebleServiceImpl implements MueblesService{
 	@Override
 	public String Borrar(int id) {
 		muemap.delete(id);
-		return "se borro el elemento";
+		return "se borro el elemento =)";
 	}
 
 	@Override
